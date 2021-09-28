@@ -5,12 +5,9 @@
   --rojo: rgb(238, 9, 9);
 }
 
-body {
-  background-color: aqua;
-}
-
 .header {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 12vh;
   display: flex;
@@ -38,6 +35,7 @@ body {
 .header__logo{
     text-transform: uppercase;
     font-weight: 700;
+    font-size: calc(16px + .5vw);
 }
 
 .nav {
