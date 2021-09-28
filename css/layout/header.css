@@ -1,6 +1,8 @@
 :root {
   --blanco: #fff;
   --negro:#000;
+  --negro-letra:#535659;
+  --rojo: rgb(238, 9, 9);
 }
 
 body {
@@ -22,10 +24,20 @@ body {
   width: 90%;
   display: flex;
   align-items: center;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
+}
+
+.header__logo a, .nav__link{
+    text-decoration: none;
+    color:var(--negro-letra);
+}
+
+.header__logo{
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .nav {
@@ -41,11 +53,22 @@ body {
 
 .nav__item {
   list-style: none;
-  padding: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.nav__link {
-  text-decoration: none;
+.nav__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav__link:hover{
+    color: var(--rojo);
 }
 
 .bar1,
@@ -99,8 +122,23 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-  .burger,
-  .cancel-btn {
+  .burger{
     display: none;
   }
+  
+  .nav__list{
+      width: 50%;
+  }
+
+  .nav__item{
+    margin: 0 10px;
+  }
+
+
+  
+.nav__link:hover::before {
+  transform: scaleX(1);
+}
+
+
 }
