@@ -37,62 +37,116 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/base/normalize.css" />
-    <link rel="stylesheet" href="css/base/fonts.css">
-    <link rel="stylesheet" href="css/components/button.css">
-    <link rel="stylesheet" href="css/layout/header.css">
-    <link rel="stylesheet" href="css/layout/home.css">
+    <link rel="stylesheet" href="css/base/fonts.css" />
+    <link rel="stylesheet" href="css/components/button.css" />
+    <link rel="stylesheet" href="css/layout/header.css" />
+    <link rel="stylesheet" href="css/layout/home.css" />
 
     <title>El Pionero Glew</title>
   </head>
   <body>
     <header class="header">
-        <div class="header__container">
-          <nav class="nav">
-            <div class="header__logo"><a href="#home">El Pionero Glew</a></div>
-  
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#about" class="nav__link">Sobre Nosotros</a>
-              </li>
-              <li class="nav__item">
-                <a href="#servicios" class="nav__link">Servicios</a>
-              </li>
-              <li class="nav__item">
-                <a href="#trabajos" class="nav__link">Testimonios</a>
-              </li>
-              <li class="nav__item">
-                <a href="#galeria" class="nav__link">Galeria</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contacto" class="nav__link">Contacto</a>
-              </li>
-            </ul>
-  
-            <div class="burger">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-          </nav>
+      <div class="header__container">
+        <nav class="nav">
+          <div class="header__logo"><a href="#home">El Pionero Glew</a></div>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Sobre Nosotros</a>
+            </li>
+            <li class="nav__item">
+              <a href="#servicios" class="nav__link">Servicios</a>
+            </li>
+            <li class="nav__item">
+              <a href="#trabajos" class="nav__link">Testimonios</a>
+            </li>
+            <li class="nav__item">
+              <a href="#galeria" class="nav__link">Galeria</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacto" class="nav__link">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="home__text-container">
+          <h1 class="home__h1">El Pionero Glew</h1>
+          <p class="home__p">
+            SOMOS UNA EMPRESA DEDICADA A LA VENTA POR MAYOR Y MENOR DE
+            MATERIALES PARA LA CONSTRUCCION.
+          </p>
+          <p class="home__p">
+            <i class="fas fa-map-marker-alt"></i> ALMONACID 1137, ESQ. OLIVERA -
+            GLEW, BS.AS
+          </p>
         </div>
-      </header>
+        <div class="btn-container">
+          <a href="#about" class="btn">Ver Mas</a>
+        </div>
+      </section>
 
-      <main>
+      <section class="section about" id="about">
+        <div class="about__container">
+          <figure class="about__figure">
+            <img
+              src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+              class="about__img"
+            />
+          </figure>
+          <div class="about__text-container">
+            <h2 class="section__h2">Nuestra Empresa</h2>
+            <p class="section__p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+              magni alias optio? Dignissimos atque recusandae rerum vero
+              repudiandae iusto illum nesciunt repellat harum quas, et officia
+              fugiat numquam voluptatibus neque? Quos cumque earum, quisquam
+              odit pariatur consequuntur error aperiam beatae facilis explicabo
+              sapiente harum cum assumenda a maxime impedit? Eveniet, natus.
+              Saepe odio quos odit ducimus? Quasi eos ipsam consectetur.
+            </p>
+            <h3 class="section__h3">Porque elegirnos</h3>
+            <p class="section__p">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+              omnis, ratione dolores quae earum mollitia repellat aspernatur,
+              illo eum corporis soluta delectus expedita accusantium eveniet.
+              Assumenda aliquam velit adipisci eaque?
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <section class="home" id="home">
-            <div class="home__text-container">
-              <h1 class="home__h1">El Pionero Glew</h1>
-              <p class="home__p">SOMOS UNA EMPRESA DEDICADA A LA VENTA POR MAYOR Y MENOR DE MATERIALES PARA LA CONSTRUCCION.</p>
-              <p class="home__p"><i class="fas fa-map-marker-alt"></i>ALMONACID 1137, ESQ. OLIVERA - GLEW, BS.AS
-              </p>
-            </div>
-            <div class="btn-container">
-              <a href="#about" class="btn">Ver Mas</a>
-            </div>
-          </section>
-
-      </main>
-
-      <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              900,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
