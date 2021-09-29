@@ -18,3 +18,20 @@
     color: var(--blanco);
 
 } 
+
+
+.card__contacto{
+    display: flex;
+    font-weight: 700;
+    margin: 10px;
+    border: 1px solid #00000030;
+    padding: 10px;
+    background-color: rgb(14, 14, 104);
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.icon__contacto{
+    display: flex;
+    margin-right: 5px;
+}
