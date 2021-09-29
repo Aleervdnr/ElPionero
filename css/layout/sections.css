@@ -31,9 +31,11 @@
   flex-direction: column;
 }
 
-.about__figure,
+.about__figure{
+    width: 45%;
+}
 .about__text-container {
-  width: 50%;
+  width: 55%;
 }
 
 .about__img {
