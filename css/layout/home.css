@@ -37,6 +37,10 @@
     font-size: calc(14px + .5vw);
 }
 
+.home__p2{
+    font-size: calc(12px +.5vw);
+}
+
 
 /* Mobile L */
 @media screen and (min-width:426px) and (max-width: 767px){
