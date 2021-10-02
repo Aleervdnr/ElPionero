@@ -98,6 +98,12 @@
     transform: translateX(80px);
   }
 
+  .hide-nav{
+    position: absolute;
+    right: 30px;
+    transform: translateY(-80px);
+  }
+
   @media screen and (max-width: 767px){
     .hide {
       right: 30px;

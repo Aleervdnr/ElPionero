@@ -52,6 +52,7 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 const body = document.querySelector("body");
 const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav__list")
 
 img.onclick = function () {
   modal.style.display = "block";
@@ -59,6 +60,7 @@ img.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 img2.onclick = function () {
@@ -67,6 +69,7 @@ img2.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 img3.onclick = function () {
@@ -75,6 +78,7 @@ img3.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 img4.onclick = function () {
@@ -83,6 +87,7 @@ img4.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 img5.onclick = function () {
@@ -91,6 +96,7 @@ img5.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 img6.onclick = function () {
@@ -99,6 +105,7 @@ img6.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 img7.onclick = function () {
@@ -107,6 +114,7 @@ img7.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 img8.onclick = function () {
@@ -115,6 +123,7 @@ img8.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 img9.onclick = function () {
@@ -123,6 +132,7 @@ img9.onclick = function () {
   captionText.innerHTML = this.alt;
   body.classList.add("disabled");
   burger.classList.add("hide");
+  nav.classList.add("hide-nav")
 };
 
 // Get the <span> element that closes the modal
@@ -133,4 +143,5 @@ span.onclick = function () {
   modal.style.display = "none";
   body.classList.remove("disabled");
   burger.classList.remove("hide");
+  nav.classList.remove("hide-nav")
 };
