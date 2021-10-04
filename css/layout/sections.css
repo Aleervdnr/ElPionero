@@ -123,9 +123,7 @@
 }
 
 .footer__text-container {
-  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -192,7 +190,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 50px 300px 50px 50px;
+  grid-template-rows: 300px 100px 25px 25px;
   justify-items: center;
   align-items: center;
 }
@@ -200,6 +198,23 @@
 .footer-map{
   width: 100%;
   height: 100%;
+}
+
+.footer__link{
+  text-decoration: none;
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 0 5px;
+}
+
+.footer__link:hover{
+  color: var(--negro);
+  background-color: var(--blanco);
+}
+
+.footer__p{
+  font-size: 12px;
+  
 }
 
 
@@ -314,6 +329,10 @@
   }
 
   .p__ventas2 {
+    width: 50%;
+  }
+
+  .footer-map{
     width: 50%;
   }
 
