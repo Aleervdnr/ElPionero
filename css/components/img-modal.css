@@ -1,5 +1,6 @@
 .galeria__grid-container{
   padding-top: 20px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(9,200px);
@@ -11,7 +12,7 @@
 
 /* Style the Image Used to Trigger the Modal */
 #myImg, #myImg2,#myImg3, #myImg4,#myImg5, #myImg6,#myImg7, #myImg8,#myImg9 {
-    border-radius: 5px;
+  
     cursor: pointer;
     transition: 0.3s;
     width: 100%;
@@ -149,7 +150,7 @@
   @media screen and (min-width: 1024px){
     .galeria__grid-container{
 
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 300px);
       grid-template-rows: repeat(3,300px);
       grid-gap: 30px;
     }

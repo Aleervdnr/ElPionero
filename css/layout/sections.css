@@ -78,6 +78,27 @@
   color: var(--negro-letra);
 }
 
+.ul__about {
+  list-style: none;
+  padding: 0px;
+  margin-left: 10px;
+  }
+
+  .ul__about li{
+    padding: 10px 0;
+  }
+  
+  .ul__about li::before {
+  content: "\BB";  
+  color: red; 
+  display: inline-block; 
+  padding-right: 20px;
+  font-size: 50px;
+  line-height: 25px;
+  vertical-align: -11px;
+  width: 15px;
+  }
+
 .services {
   display: flex;
   flex-direction: column;
@@ -200,7 +221,7 @@
 
 .footer-map{
   width: 100%;
-  max-width: 450px;
+  max-width: 700px;
   height: 250px;
 }
 
@@ -221,13 +242,6 @@
   
 }
 
-.footer-top{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .icon-container{
   padding-top: 30px;
@@ -363,9 +377,13 @@
   }
 
   .footer__map{
-    width: 50%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-map{
+    height: 350px;
   }
 }
