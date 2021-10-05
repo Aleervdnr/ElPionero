@@ -7,7 +7,7 @@
     border-radius: 50%;
   }
 
-  .fa:hover {
+  .fa-footer:hover, .fas-footer:hover {
     opacity: 0.7;
   }
 
