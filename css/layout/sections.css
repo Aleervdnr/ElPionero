@@ -76,6 +76,7 @@
 
 .section__p {
   color: var(--negro-letra);
+  margin-bottom: 30px;
 }
 
 .ul__about {

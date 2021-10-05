@@ -23,6 +23,7 @@
 }
 
 .home__text-container{
+    padding-top: 80px;
     color: var(--blanco);
     text-align: center;
 }
@@ -31,6 +32,7 @@
     text-transform: uppercase;
     font-size: calc(35px + .5vw);
     margin-bottom: 0;
+    font-weight: normal;
 }
 
 .home__p{
