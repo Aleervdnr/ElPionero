@@ -83,22 +83,19 @@
   list-style: none;
   padding: 0px;
   margin-left: 10px;
+  display: flex;
+  flex-direction: column;
   }
 
   .ul__about li{
     padding: 10px 0;
   }
-  
-  .ul__about li::before {
-  content: "\BB";  
-  color: red; 
-  display: inline-block; 
-  padding-right: 20px;
-  font-size: 50px;
-  line-height: 25px;
-  vertical-align: -11px;
-  width: 15px;
+
+  .fa-chevron-right{
+    color:var(--rojo);
+    font-size: 20px;
   }
+  
 
 .services {
   display: flex;
