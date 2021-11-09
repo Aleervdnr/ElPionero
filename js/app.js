@@ -145,3 +145,20 @@ span.onclick = function () {
   burger.classList.remove("hide");
   nav.classList.remove("hide-nav")
 };
+
+//Animacion
+window.addEventListener("scroll", () => {
+  let contenedor = document.querySelector(".ul__about")
+  let animacion = document.querySelectorAll(".animado")
+
+  let tamañoPantalla = window.innerHeight/1.5
+
+  animacion.forEach(element => {
+    if(contenedor.getBoundingClientRect().top < tamañoPantalla){
+      element.style.animation = "mover 1s"
+      element.classList.remove("opacity0")
+      element.classList.add("opacity1")
+      
+    }
+  })
+})

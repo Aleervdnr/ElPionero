@@ -423,3 +423,17 @@
     grid-gap: 20px;
 } 
 }
+
+@keyframes mover{
+  0%{
+     transform: translateX(50%);
+  }
+}
+
+.opacity0{
+  opacity: 0;
+}
+
+.opacity1{
+  opacity: 1;
+}
